@@ -10,6 +10,13 @@ const swaggerUi = require("swagger-ui-express");
 const app = express();
 
 app.use(express.json());
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "DELETE", "UPDATE", "PUT"],
+   
+  })
+);
 
 const swaggerDefinition = {
   openapi: "3.0.0",
