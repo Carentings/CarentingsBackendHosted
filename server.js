@@ -6,10 +6,6 @@ const port = process.env.PORT || 3000;
 const { addRoutesToApp } = require("./routes/index");
 const swaggerJSDoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
-
-const app = express();
-
-app.use(express.json());
 const cors = require("cors");
 const app = express();
 
