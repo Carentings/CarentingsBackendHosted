@@ -35,7 +35,7 @@ async function deleteAsync(id) {
 
 async function lookUpAsync(keyword) {
   let responseObj = new Response();
-  await mongoLookUpAsync(Model, keyword, "productName", responseObj);
+  await mongoLookUpAsync(Model, keyword, "name", responseObj);
   return responseObj;
 }
 
